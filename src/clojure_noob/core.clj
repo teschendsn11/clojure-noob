@@ -1,9 +1,8 @@
 (ns clojure-noob.core
-  (:gen-class))
-
-(use '[korma.db :as kdb])
-(use '[korma.core :as kCore])
-
+  (:gen-class)
+  (:require [korma.db :as kdb]
+            [korma.core :as kCore]
+            [clojure.data.json :as json]))
 (defn runPoll
   "create a simple polling function"
   [count]
